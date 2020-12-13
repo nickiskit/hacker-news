@@ -21,7 +21,7 @@ const NewsPage = ({news, update}) => {
 				<i className='far fa-comments news-icon'></i>
 				<p className="counter">{news.descendants}</p>
 			</div>
-			{news.text && <span  style={{fontSize: '20px'}}>{news.text}</span>}
+			{news.text && <p className="news-text">{news.text}</p>}
 			{ news.url && <p style={{margin: '10px 0 30px'}}>
     			<Button variant="primary" href={news.url}>Узнать больше</Button>
  			</p> }
